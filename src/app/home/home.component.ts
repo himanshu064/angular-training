@@ -9,6 +9,9 @@ export interface Tile {
   heading2: string;
   para: string;
   para1: string;
+  btnName: string;
+  iconImg: string;
+  imgContant: string;
 }
 @Component({
   selector: 'app-home',
@@ -29,6 +32,9 @@ export class HomeComponent implements OnInit {
       cols: 3,
       rows: 5,
       color: '',
+      btnName: 'Share Your Story',
+      iconImg: '../assets/images/Group 678.png',
+      imgContant: 'Watch highlights',
     },
     {
       heading: '',
@@ -36,6 +42,9 @@ export class HomeComponent implements OnInit {
       heading2: '',
       para: '',
       para1: '',
+      btnName: '',
+      iconImg: '',
+      imgContant: '',
       cols: 1,
       rows: 4,
       color: '',
