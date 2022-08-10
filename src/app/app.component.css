@@ -2,9 +2,6 @@
     padding-left: 50px;
 }
 
-.navbar-nav {
-    margin-left: 638px;
-}
 
 .search-icon img {
     padding-top: 10px;
@@ -28,10 +25,13 @@
 }
 
 
+.collapse,
+.navbar-collapse {
+    justify-content: space-between;
+}
+
 @media (max-width:550px) {
-    .navbar-nav {
-        margin-left: 0px;
-    }
+
 
     .line {
         display: none;

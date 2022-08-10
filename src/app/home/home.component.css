@@ -13,6 +13,9 @@
     line-height: 46px;
 }
 
+.side-space {
+    padding-left: 20px;
+}
 
 .travels-text {
     font-family: 'Changa One', cursive;
@@ -63,6 +66,10 @@
     color: #8A53FF;
 }
 
+.cards-img {
+    width: 100%;
+}
+
 
 .form-head {
     font-family: 'Roboto', sans-serif;
@@ -80,8 +87,8 @@
 
 .form-section {
     width: 100%;
-    max-width: 857px;
-    padding-left: 261px;
+    display: flex;
+    justify-content: center;
 }
 
 .form-main {
@@ -123,6 +130,11 @@
 
 
 @media (max-width:550px) {
+
+    .side-space {
+        padding-left: 0px;
+    }
+
     .form-section {
         width: 100%;
         max-width: 364px;
