@@ -1,0 +1,141 @@
+.top-banner {
+    background-image: url("src/assets/images/hero-background.png");
+    height: 551px;
+}
+
+.form-sec {
+    background-image: url("src/assets/images/Share your travels section background image.png");
+}
+
+.main-text {
+    font-family: 'Changa One', cursive;
+    font-size: 42px;
+    line-height: 46px;
+}
+
+
+.travels-text {
+    font-family: 'Changa One', cursive;
+    font-size: 24px;
+    line-height: 46px;
+}
+
+
+.hero-text {
+    color: #8A53FF;
+}
+
+.main-content {
+    padding-left: 50px;
+}
+
+.btn-story {
+    background-color: #8A53FF;
+    color: #fff;
+    border: 0px;
+    border-radius: 4px;
+    padding: 6px 15px;
+}
+
+.play-icon {
+    border: 0px;
+    margin-left: 15px;
+    background: transparent;
+}
+
+.adventures {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 46px;
+    color: #8A53FF;
+    text-align: center;
+}
+
+.country-name {
+    font-family: 'Changa One', cursive;
+    font-size: 24px;
+    color: #000;
+}
+
+.discover-para {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #8A53FF;
+}
+
+
+.form-head {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #8A53FF;
+}
+
+.btn-submit {
+    background-color: #8A53FF;
+    color: #fff;
+    border: 0px;
+    border-radius: 4px;
+    padding: 8px 60px;
+}
+
+.form-section {
+    width: 100%;
+    max-width: 857px;
+    padding-left: 261px;
+}
+
+.form-main {
+    background-color: #fff;
+    padding: 40px;
+}
+
+
+.card {
+    background-color: #f9f9f9;
+    border: 0px;
+}
+
+.card-img {
+    padding: 8px;
+}
+
+
+.blog-color {
+    color: #8A53FF;
+}
+
+
+.quik-links {
+    display: flex !important;
+    justify-content: flex-end;
+}
+
+.quik-links a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #adadad;
+}
+
+.copyright {
+    color: #adadad;
+}
+
+
+
+@media (max-width:550px) {
+    .form-section {
+        width: 100%;
+        max-width: 364px;
+        padding-left: 0px;
+    }
+
+    .quik-links {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .copyright {
+        color: #adadad;
+        text-align: center;
+    }
+}
