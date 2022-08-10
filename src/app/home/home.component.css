@@ -138,4 +138,10 @@
         color: #adadad;
         text-align: center;
     }
+
+    .main-content {
+        padding-left: 10px;
+    }
+
+
 }

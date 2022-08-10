@@ -1,4 +1,4 @@
-.img-logo img {
+.img-logos img {
     padding-left: 50px;
 }
 
@@ -33,15 +33,29 @@
         margin-left: 0px;
     }
 
-    .img-logo img {
-        padding-left: 139px;
-    }
-
     .line {
         display: none;
     }
 
+    .img-logos img {
+        padding-left: 0px;
+    }
+
     .icon-imgaes {
         padding-bottom: 10px;
+    }
+
+    .img-logo {
+        display: none;
+    }
+
+    .search-icon img {
+        padding-top: 10px;
+        padding-left: 8px;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: #fff;
+        border-color: #fff;
     }
 }
