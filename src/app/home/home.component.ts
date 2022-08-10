@@ -1,5 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
+export interface Tile {
+  color: string;
+  cols: number;
+  rows: number;
+  heading: string;
+  heading1: string;
+  heading2: string;
+  para: string;
+  para1: string;
+}
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,34 +18,29 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
-
-  countryImg = [
+  tiles: Tile[] = [
     {
-      img: 'assets/images/Iceland card image.png',
-      heading: 'Iceland',
-      para: 'Discover',
-      alt: 'Iceland',
-    },
+      heading: 'Let’s talk',
+      heading1: 'about',
+      heading2: 'your next trip! ',
 
-    {
-      img: 'assets/images/Italy card image.png',
-      heading: 'Italy',
-      para: 'Discover',
-      alt: 'Italy',
-    },
-
-    {
-      img: 'assets/images/Dubai card image.png',
-      heading: 'Dubai',
-      para: 'Discover',
-      alt: 'Dubai',
+      para: 'Share your favorite travel destination and we will',
+      para1: 'feature it in our next blog ! Share your story Watch highlights',
+      cols: 3,
+      rows: 5,
+      color: '',
     },
     {
-      img: 'assets/images/Patagonia Card Image.png',
-      heading: 'Patagonia',
-      para: 'Discover',
-      alt: 'Patagonia',
+      heading: '',
+      heading1: '',
+      heading2: '',
+      para: '',
+      para1: '',
+      cols: 1,
+      rows: 4,
+      color: '',
     },
   ];
+
+  ngOnInit(): void {}
 }

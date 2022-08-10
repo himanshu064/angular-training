@@ -1,0 +1,17 @@
+.img-logo img {
+    margin-top: 10px;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.mat-toolbar-single-row {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 77px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+}
