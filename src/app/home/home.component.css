@@ -7,10 +7,10 @@
     background-image: url("src/assets/images/Share your travels section background image.png");
 }
 
-.main-text {
+.main-text1 {
     font-family: 'Changa One', cursive;
-    font-size: 42px;
-    line-height: 46px;
+    font-size: 70px;
+    line-height: 60px
 }
 
 .side-space {
@@ -130,6 +130,12 @@
 
 
 @media (max-width:550px) {
+
+    .main-text1 {
+        font-family: 'Changa One', cursive;
+        font-size: 32px;
+        line-height: 40px
+    }
 
     .side-space {
         padding-left: 0px;
