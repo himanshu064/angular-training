@@ -16,10 +16,9 @@
 </div> -->
 
 
-<mat-grid-list cols="6" rowHeight="100px">
-    <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows"
-        [style.background]="tile.color">
-        <div class="main-banner">
+<mat-grid-list cols="6" rowHeight="100px" class="main-banner">
+    <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows">
+        <div class="main-content">
             <h2 class="main-text1 "><span class="hero-text"> {{tile.heading}} </span>{{tile.heading1}}<br>
                 {{tile.heading2}}
             </h2>
@@ -28,7 +27,48 @@
             <p class="main-para"> {{tile.para}} <br> {{tile.para1}}</p>
             <button mat-button class="btn-story">{{tile.btnName}}</button>
             <button mat-button class="play-icon">
-                <img src="{{tile.iconImg}}" alt="play">{{tile.imgContant}}</button>
+                <img src="{{tile.iconImg}}">{{tile.imgContant}}</button>
         </div>
     </mat-grid-tile>
 </mat-grid-list>
+
+
+<mat-grid-list cols="6" rowHeight="100px">
+    <mat-grid-tile *ngFor="let hero of heroSection" [colspan]="hero.cols" [rowspan]="hero.rows">
+        <div class="main-content">
+            <img src="{{hero.img}}" class="w-100">
+            <h4 class="hero-text1 "> {{hero.heading}}</h4>
+            <h4 class="heading-text">{{hero.heading1}}</h4>
+            <p class="hero-para"> {{hero.para}}</p>
+
+            <div class="hero-btn">
+                <img src="{{hero.iconImg}}">
+                <span class="blog-color">{{hero.btnName}}</span>
+            </div>
+
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
+
+
+<section class="counteries">
+    <h5 class="adventures">JOIN OUR ADVENTURES</h5>
+    <h4 class="main-text"> Discover the world with us</h4>
+
+    <mat-grid-list cols="4" rowHeight="100px" class="card-main">
+        <mat-grid-tile *ngFor="let counter of countryIS" [colspan]="counter.cols" [rowspan]="counter.rows">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <!-- <div mat-card-avatar class="example-header-image"></div> -->
+                    <!-- <mat-card-title>Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+                </mat-card-header>
+                <img mat-card-image src="{{counter.img}}" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <h5 class="country-name">{{counter.heading}}</h5>
+                    <p class="discover-para">{{counter.para}}</p>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</section>

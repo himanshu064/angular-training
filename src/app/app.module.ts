@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [AppComponent, FooterComponent, HomeComponent, NavbarComponent],
   imports: [
@@ -20,6 +21,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatToolbarModule,
     MatButtonModule,
     MatGridListModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
